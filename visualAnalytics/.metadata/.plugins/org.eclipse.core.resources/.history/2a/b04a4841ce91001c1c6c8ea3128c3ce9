@@ -1,0 +1,47 @@
+package joao.alarcon.tests.kabum.analytics.model;
+
+public class SalesPerYear 
+{
+	private Integer year;
+	private Integer total;
+	private Integer ecommerce;
+	
+	
+	public SalesPerYear(){}
+	
+	public SalesPerYear(Integer year, String total, 
+			String ecommerce)
+	{
+		this.year = year;
+		this.total = Integer.valueOf(total);
+		this.ecommerce = Integer.valueOf(ecommerce);
+	}
+
+	public Integer getYear() 
+	{
+		return year;
+	}
+	public void setYear(Integer year) 
+	{
+		this.year = year;
+	}
+
+	public Integer getTotal() 
+	{
+		return total;
+	}
+	public void setTotal(Integer total) 
+	{
+		this.total = total;
+	}
+
+	public Integer getEcommerce() 
+	{
+		return ecommerce;
+	}
+	public void setEcommerce(Integer ecommerce) 
+	{
+		this.ecommerce = ecommerce;
+	}
+	
+}

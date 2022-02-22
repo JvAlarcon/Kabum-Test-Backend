@@ -1,0 +1,24 @@
+package joao.alarcon.tests.kabum.analytics.api;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import joao.alarcon.tests.kabum.analytics.bo.VisualAnalyticsBO;
+
+@RestController
+@RequestMapping("/testapi/analytics")
+public class VisualAnalyticsApi 
+{
+	@GetMapping()
+	public List<String> getDataAnalytics()
+	{
+		VisualAnalyticsBO visualAnalyticsBo = new VisualAnalyticsBO();
+		visualAnalyticsBo.readXLSData();
+		
+		
+		return null;
+	}
+}

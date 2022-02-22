@@ -1,0 +1,24 @@
+package joao.alarcon.tests.kabum;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class ReadFileTest 
+{
+	public static void main(String[] args) 
+	{
+		String filePath = "src\\main\\resources\\dataAnalytics\\ecommerceSales.xls";
+		System.out.println("File path: " + filePath);
+		
+		try 
+		{
+			FileInputStream fileInputStream = new FileInputStream(new File(filePath));
+		} 
+		catch (FileNotFoundException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

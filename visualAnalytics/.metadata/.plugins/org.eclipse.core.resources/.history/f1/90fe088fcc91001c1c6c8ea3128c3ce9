@@ -1,0 +1,36 @@
+package joao.alarcon.tests.kabum.analytics.model;
+
+import java.util.List;
+
+public class Sales 
+{
+	private List<MerchandiseLine> merchandiseLines;
+	private Integer year;
+	
+	public Sales() {}
+	
+	public Sales(List<MerchandiseLine> merchandiseLines, Integer year)
+	{
+		this.merchandiseLines = merchandiseLines;
+		this.year = year;
+	}
+	
+	
+	public List<MerchandiseLine> getMerchandiseLines() 
+	{
+		return merchandiseLines;
+	}
+	public void setMerchandiseLines(List<MerchandiseLine> merchandiseLines) 
+	{
+		this.merchandiseLines = merchandiseLines;
+	}
+
+	public Integer getYear() 
+	{
+		return year;
+	}
+	public void setYear(Integer year) 
+	{
+		this.year = year;
+	}
+}

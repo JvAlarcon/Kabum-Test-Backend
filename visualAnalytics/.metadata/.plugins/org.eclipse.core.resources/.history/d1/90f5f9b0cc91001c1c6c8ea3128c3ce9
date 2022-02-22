@@ -1,0 +1,37 @@
+package joao.alarcon.tests.kabum.analytics.model;
+
+import java.util.List;
+
+public class MerchandiseLine 
+{
+	private String name;
+	private List<SalesPerYear> salesPerYear;
+	
+	
+	public MerchandiseLine() {}
+	
+	public MerchandiseLine(String name, List<SalesPerYear> merchandiseLines)
+	{
+		this.salesPerYear = merchandiseLines;
+		this.name = name;
+	}
+	
+	
+	public List<SalesPerYear> getMerchandiseLines() 
+	{
+		return salesPerYear;
+	}
+	public void setMerchandiseLines(List<SalesPerYear> merchandiseLines) 
+	{
+		this.salesPerYear = merchandiseLines;
+	}
+
+	public String getName() 
+	{
+		return name;
+	}
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+}

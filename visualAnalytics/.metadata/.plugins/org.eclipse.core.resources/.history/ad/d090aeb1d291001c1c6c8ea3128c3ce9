@@ -1,0 +1,75 @@
+package joao.alarcon.tests.kabum.analytics.model;
+
+public class SalesPerYear 
+{
+	private String year;
+	private String total;
+	private String ecommerce;
+	
+	
+	public SalesPerYear(){}
+	
+	public SalesPerYear(String year, String total, 
+			String ecommerce)
+	{
+		this.total = Integer.valueOf(Double.valueOf(total).intValue());
+		this.ecommerce = Integer.valueOf(Double.valueOf(ecommerce).intValue());
+		
+		if(year.contains("r"))
+		{
+			this.year = year;
+		}
+		else
+		{
+			this.year = Integer.valueOf(Double.valueOf(year).intValue()) + "";
+		}
+	}
+
+	public String getYear() 
+	{
+		return year;
+	}
+	public void setYear(String year) 
+	{
+		this.year = year;
+	}
+
+	public Integer getTotal() 
+	{
+		return total;
+	}
+	public void setTotal(Integer total) 
+	{
+		this.total = total;
+	}
+
+	public Integer getEcommerce() 
+	{
+		return ecommerce;
+	}
+	public void setEcommerce(Integer ecommerce) 
+	{
+		this.ecommerce = ecommerce;
+	}
+	
+	private Boolean stringContainR(String value)
+	{
+		if(!value.contains("r"))
+		{
+			return Boolean.FALSE;
+		}
+		
+		return Boolean.TRUE;
+	}
+	
+	private Boolean stringContainSOrNA(String value)
+	{
+		if(!value.contains("S") ||
+			value.contains("NA"))
+		{
+			return Boolean.FALSE;
+		}
+		
+		return Boolean.TRUE;
+	}
+}

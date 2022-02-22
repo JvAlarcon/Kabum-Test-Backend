@@ -1,0 +1,11 @@
+1644971775292	Rename package 'joao.alarcon.tests.kabum.analytics.controller'
+1644971792794	Rename type 'VisualAnalyticsController'
+1644975026579	Rename type 'Order'
+1645290166488	Rename local variable 'cellValue'
+1645297034842	Rename resource 'data-analytics'
+1645297051374	Rename resource 'ecommerce-sales.xls'
+1645299240608	Delete element
+1645306492332	Rename method 'columnIsEven'
+1645306853067	Rename type 'MerchandiseLine'
+1645306863372	Rename type 'Sales'
+1645306878678	Rename field 'merchandiseLines'

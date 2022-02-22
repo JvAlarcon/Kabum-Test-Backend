@@ -1,0 +1,27 @@
+package joao.alarcon.tests.kabum.analytics.api;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import joao.alarcon.tests.kabum.analytics.bo.VisualAnalyticsBO;
+import joao.alarcon.tests.kabum.analytics.model.MerchandiseLine;
+
+@RestController
+@RequestMapping("/testapi/analytics")
+public class VisualAnalyticsApi 
+{
+	@Autowired
+	private VisualAnalyticsBO visualAnalyticsBo;
+	
+	@CrossOrigin(origins = "http://localhost:8081/")
+	@GetMapping()
+	public List<MerchandiseLine> getDataAnalytics()
+	{
+		return visualAnalyticsBo.readXLSData();
+	}
+}
